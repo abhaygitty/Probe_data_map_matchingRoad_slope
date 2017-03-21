@@ -31,7 +31,7 @@ def speeddata(dir):
     pickle.dump(speed, open('probeSpeed.pckl','wb'))
     return speed
 
-def probeMovementPointer(dir):
+def probeMovementPointer(dir): #to get determine the angle of movement of the probe vehicle with respect to the road segment or link
     if os.path.exists('probeHeading.pckl'):
         heading = pickle.load(open('probeHeading.pckl','rb'))
         return heading
